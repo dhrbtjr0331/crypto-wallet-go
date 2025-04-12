@@ -1,0 +1,44 @@
+# Binaries for programs and plugins
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Build output
+/bin/
+/build/
+/dist/
+*.out
+*.test
+
+# Vendor directories
+/vendor/
+
+# Go workspace files
+*.mod
+*.sum
+
+# IDE/editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# gqlgen-generated files (optional if you want to regenerate)
+gqlgen.yml
+graph/generated/
+graph/model/
+
+# Secrets (if applicable)
+.env
+.env.*
+
+# Web3 keys (if you export any private keys or wallet files)
+keystore/
+*.key
+*.pem

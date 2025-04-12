@@ -1,0 +1,18 @@
+type Wallet {
+  address: String!
+  privateKey: String!
+  balance: String!
+}
+
+type Transaction {
+  hash: String!
+}
+
+type Query {
+  getBalance(address: String!): String!
+}
+
+type Mutation {
+  createWallet: Wallet!
+  sendTransaction(privateKey: String!, to: String!, amount: String!): Transaction!
+}
